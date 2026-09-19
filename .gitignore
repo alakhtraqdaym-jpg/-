@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Y7 MAX Web</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #070b17;
+  color: white;
+  padding: 25px 15px;
+}
+
+.container {
+  max-width: 650px;
+  margin: auto;
+  background: #101728;
+  border: 1px solid #263452;
+  border-radius: 22px;
+  padding: 25px 18px;
+  box-shadow: 0 0 35px rgba(0,0,0,.4);
+}
+
+.logo {
+  text-align: center;
+  color: #00e5a0;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #8993aa;
+  margin-bottom: 25px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #171f32;
+  border: 1px solid #29354e;
+  border-radius: 15px;
+  padding: 16px;
+  margin: 12px 0;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  border-color: #00e5a0;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #172f38;
+  font-size: 24px;
+}
+
+.text {
+  flex: 1;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.description {
+  color: #7e899f;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.number {
+  background: #124e49;
+  color: #00e5a0;
+  padding: 5px 9px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.login {
+  width: 100%;
+  border: none;
+  border-radius: 13px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #00d99a;
+  color: #06130f;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  color: #657087;
+  font-size: 12px;
+  margin-top: 25px;
+  border-top: 1px solid #253047;
+  padding-top: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="logo">Y7 MAX Web</div>
+
+  <div class="subtitle">
+    موقعك الخاص — تحكم بسيط وسريع
+  </div>
+
+  <button class="login" onclick="login()">
+    🔐 تسجيل الدخول
+  </button>
+
+  <div class="card" onclick="action('نظام الرقص')">
+    <div class="icon">🎵</div>
+    <div class="text">
+      <div class="title">نظام الرقص</div>
+      <div class="description">اختر الرقم من القائمة أو أدخل رقمًا يدويًا</div>
+    </div>
+    <div class="number">10</div>
+  </div>
+
+  <div class="card" onclick="action('إغراق السكواد')">
+    <div class="icon">👻</div>
+    <div class="text">
+      <div class="title">إغراق السكواد بالأشباح</div>
+      <div class="description">خيار ترفيهي داخل الموقع</div>
+    </div>
+    <div class="number">2</div>
+  </div>
+
+  <div class="card" onclick="action('رسالة الفريق')">
+    <div class="icon">✉️</div>
+    <div class="text">
+      <div class="title">رسالة عبر تيم كود</div>
+      <div class="description">إرسال رسالة إلى أعضاء الفريق</div>
+    </div>
+    <div class="number">2</div>
+  </div>
+
+  <div class="card" onclick="action('البحث')">
+    <div class="icon">🔎</div>
+    <div class="text">
+      <div class="title">البحث عن صاحب سكواد</div>
+      <div class="description">البحث عن لاعب أو فريق</div>
+    </div>
+    <div class="number">2</div>
+  </div>
+
+  <div class="card" onclick="action('دعوة السكواد')">
+    <div class="icon">👥</div>
+    <div class="text">
+      <div class="title">دعوة إلى السكواد</div>
+      <div class="description">إنشاء دعوة للفريق</div>
+    </div>
+    <div class="number">2</div>
+  </div>
+
+  <div class="footer">
+    Y7 MAX Web — موقعك الخاص
+    <br><br>
+    © 2026
+  </div>
+
+</div>
+
+<script>
+function login() {
+  alert("صفحة تسجيل الدخول ستتم إضافتها في الخطوة القادمة.");
+}
+
+function action(name) {
+  alert("اخترت: " + name);
+}
+</script>
+
+</body>
+</html>
